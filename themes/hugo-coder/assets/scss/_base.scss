@@ -216,10 +216,28 @@ figure {
 }
 
 .btn-toggle {
-   margin-left: 5rem;
- @media only screen and (min-width : 768px) {
-    font-size: 2rem;
-    margin-left: 32rem;
+  position: fixed;
+  bottom: 10%;
+  left: 5%;
+  border-radius: 50%;
+  outline: none;
+  border: none;
+  width: 5rem;
+  height: 5rem;
+  display: inline-block;
+  box-shadow: 0 0 1rem $fg-color;
+  background: $bg-color;
+  transition: all .2s;
+  font-size: 2.2rem;
+
+
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  &:active {
+    transform: translateY(3px);
   }
 }
 

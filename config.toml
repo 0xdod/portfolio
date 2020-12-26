@@ -19,7 +19,7 @@ disqusShortname = "portfolio-lrpi5ggzul"
 [params]
     author = "Damilola Dolor"
     description = "Damilola Dolor's portfolio website"
-    keywords = "blog,developer,personal,software,backend,web developer"
+    keywords = "damilola,dolor,damilola dolor,blog,developer,personal,software,backend,web developer"
     info = "Software developer and magician."
     avatarurl = "images/avatar.jpg"
     #gravatar = "damiloladolor@gmail.com"
@@ -81,8 +81,7 @@ disqusShortname = "portfolio-lrpi5ggzul"
     name = "LinkedIn"
     icon = "fab fa-linkedin"
     weight = 4
-    url = "https://www.linkedin.com/in/damiloladolor/"
-
+    url = "https://www.linkedin.com/in/damilola-dolor97/"
 
 [languages]
     [languages.en]

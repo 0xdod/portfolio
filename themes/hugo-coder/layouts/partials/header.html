@@ -3,7 +3,9 @@
     <a class="navigation-title" href="{{ .Site.BaseURL | relLangURL }}">
       {{ .Site.Title }}
     </a>
-    <i class="btn-toggle far fa-moon" id="btn-toggle"></i>
+     <button class="btn-toggle" id="btn-toggle">
+       <i class="far fa-moon"></i>
+    </button>
     {{ if or .Site.Menus.main .Site.IsMultiLingual }}
     <input type="checkbox" id="menu-toggle" />
     <label class="menu-button float-right" for="menu-toggle"><i class="fas fa-bars"></i></label>

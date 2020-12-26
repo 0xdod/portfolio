@@ -24,6 +24,7 @@
           {{ with .Page.Params.Categories }}{{ partial "taxonomy/categories.html" . }}{{ end }}
           {{ with .Page.Params.Tags }}{{ partial "taxonomy/tags.html" . }}{{ end }}
         </div>
+        <div><a href="{{ .Permalink }}#disqus_thread"></a></div>
       </header>
 
       <div>

@@ -20,6 +20,8 @@ body.colorscheme-dark {
     border-left: 2px solid #424242; }
   body.colorscheme-dark table td, body.colorscheme-dark table th {
     border: 2px solid #dadada; }
+  body.colorscheme-dark .btn-toggle {
+    box-shadow: 0 0.2rem 1rem #dadada; }
 
 @media (prefers-color-scheme: dark) {
   body.colorscheme-auto {
@@ -43,7 +45,9 @@ body.colorscheme-dark {
     body.colorscheme-auto blockquote {
       border-left: 2px solid #424242; }
     body.colorscheme-auto table td, body.colorscheme-auto table th {
-      border: 2px solid #dadada; } }
+      border: 2px solid #dadada; }
+    body.colorscheme-auto .btn-toggle {
+      box-shadow: 0 0.2rem 1rem #dadada; } }
 
 body.colorscheme-dark .content .list ul li .title {
   color: #dadada; }

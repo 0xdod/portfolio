@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ .Site.Language.Lang }}">
+<html prefix="og:http://ogp.me/ns#" lang="{{ .Site.Language.Lang }}">
 
   <head>
     <meta charset="utf-8">
@@ -9,7 +9,9 @@
     {{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
     <meta name="description" content="{{ .Description | default (.Summary | default .Site.Params.description ) }}">
     <meta name="keywords" content="{{ (delimit .Keywords ",") | default .Site.Params.keywords }}">
-
+     <meta property="og:description" content="{{ .Description | default (.Summary | default .Site.Params.description ) }}">
+    <meta name="twitter:description" content="{{ .Description | default (.Summary | default .Site.Params.description ) }}">
+     <meta itemprop="description" content="{{ .Description | default (.Summary | default .Site.Params.description ) }}">
     {{ if .Site.Params.enableTwemoji }}
       <script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
     {{ end }}
@@ -20,10 +22,19 @@
     {{ if .Permalink }}
       <base href="{{ .Permalink }}">
     {{ end }}
-    <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
+    <title itemprop="name">{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
+    <meta property="og:title" content="{{ .Title }} | {{ .Site.Title }}" />
+    <meta name="twitter:title" content="{{ .Title }} | {{ .Site.Title }}" />
+    <meta itemprop="name" content="{{ .Title }} | {{ .Site.Title }}" />
+    <meta name="application-name" content="{{ .Title }} | {{ .Site.Title }}" />
+    <meta property="og:site_name" content="{{ .Site.Params.sitename }}" />
 
     {{ if .Permalink }}
-      <link rel="canonical" href="{{ .Permalink }}">
+      <base href="{{ .Permalink }}">
+      <link rel="canonical" href="{{ .Permalink }}" itemprop="url" /> 
+      <meta name="url" content="{{ .Permalink }}" />
+      <meta name="twitter:url" content="{{ .Permalink }}" /> 
+      <meta property="og:url" content="{{ .Permalink }}" />
     {{ end }}
 
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700&display=swap" rel="stylesheet">
@@ -80,6 +91,8 @@
 
     <link rel="icon" type="image/png" href="{{ .Site.Params.favicon_32 | default "/images/favicon-32x32.png" | absURL }}" sizes="32x32">
     <link rel="icon" type="image/png" href="{{ .Site.Params.favicon_16 | default "/images/favicon-16x16.png" | absURL }}" sizes="16x16">
+    <meta name="robots" content="index,follow" /> 
+    <meta name="googlebot" content="index,follow" />
 
     {{ range .AlternativeOutputFormats -}}
       {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
@@ -119,9 +132,10 @@
     <script>
             const btn = document.querySelector("#btn-toggle");
             const currentTheme = localStorage.getItem("theme");
+            // incase theme was previously saved as dark, load dark scheme
             if (currentTheme == "dark") {
                 document.body.classList.add("colorscheme-dark")
-                btn.classList.add("fa-sun")
+                btn.firstElementChild.classList.add("fa-sun")
             }
             btn.addEventListener('click', function(){
                 document.body.classList.toggle("colorscheme-dark");
@@ -131,9 +145,9 @@
                 }
                 document.body.setAttribute('style', "transition: all .8s;")
                 localStorage.setItem("theme",theme)
-                btn.classList.toggle("fa-sun")       
+                btn.firstElementChild.classList.toggle("fa-sun")       
             })
-      </script>
+      </script> 
       <script id="dsq-count-scr" src="//portfolio-lrpi5ggzul.disqus.com/count.js" async></script>
   </body>
 
