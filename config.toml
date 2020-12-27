@@ -51,8 +51,8 @@ disqusShortname = "portfolio-lrpi5ggzul"
     enableTwemoji = true
 
     # Custom CSS
-   # custom_css = ["/css/all.min.css"]
-    custom_css = []
+    custom_css = ["/css/all.min.css"]
+    #custom_css = []
     # Custom JS
     custom_js = []
 

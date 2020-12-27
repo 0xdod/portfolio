@@ -216,6 +216,8 @@ figure {
 }
 
 .btn-toggle {
+  --bg-color: #{$bg-color};
+  --fg-color: #{$fg-color};
   position: fixed;
   bottom: 10%;
   left: 5%;
@@ -225,10 +227,11 @@ figure {
   width: 5rem;
   height: 5rem;
   display: inline-block;
-  box-shadow: 0 0 1rem $fg-color;
-  background: $bg-color;
-  transition: all .2s;
+  box-shadow: 0 0 1rem var(--fg-color);
+  background: var(--bg-color);
+  transition: all .3s;
   font-size: 2.2rem;
+  color: #fdb813;
 
 
 
@@ -237,7 +240,7 @@ figure {
   }
 
   &:active {
-    transform: translateY(3px);
+    transform: scale(1) translateY(3px);
   }
 }
 

@@ -37,7 +37,7 @@
   }
 
   .btn-toggle {
-    box-shadow: 0 .2rem 1rem $fg-color-dark;
+    --fg-color: #{$fg-color-dark};
   }
 
 }

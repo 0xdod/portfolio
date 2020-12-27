@@ -21,7 +21,7 @@ body.colorscheme-dark {
   body.colorscheme-dark table td, body.colorscheme-dark table th {
     border: 2px solid #dadada; }
   body.colorscheme-dark .btn-toggle {
-    box-shadow: 0 0.2rem 1rem #dadada; }
+    --fg-color: #dadada; }
 
 @media (prefers-color-scheme: dark) {
   body.colorscheme-auto {
@@ -47,7 +47,7 @@ body.colorscheme-dark {
     body.colorscheme-auto table td, body.colorscheme-auto table th {
       border: 2px solid #dadada; }
     body.colorscheme-auto .btn-toggle {
-      box-shadow: 0 0.2rem 1rem #dadada; } }
+      --fg-color: #dadada; } }
 
 body.colorscheme-dark .content .list ul li .title {
   color: #dadada; }
