@@ -14,12 +14,12 @@ pygmentsstyle = "b2"
 pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
 
-#disqusShortname = "yourdiscussshortname"
+disqusShortname = "portfolio-lrpi5ggzul"
 
 [params]
     author = "Damilola Dolor"
-    description = "Damilola Dolor's personal website"
-    keywords = "blog,developer,personal"
+    description = "Damilola Dolor's portfolio website"
+    keywords = "blog,developer,personal,software,backend,web developer"
     info = "Software developer and magician."
     avatarurl = "images/avatar.jpg"
     #gravatar = "damiloladolor@gmail.com"
