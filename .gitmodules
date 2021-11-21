@@ -1,4 +1,4 @@
 [submodule "public"]
 	path = public
-	url = https://github.com/fibreactive/fibreactive.github.io.git
+	url = git@github.com:0xdod/0xdod.github.io.git
 	branch = main

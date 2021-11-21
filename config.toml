@@ -1,4 +1,4 @@
-baseurl = "https://fibreactive.github.io"
+baseurl = "https://0xdod.github.io"
 title = "damiloladolor"
 
 theme = "hugo-coder"
@@ -71,12 +71,12 @@ disqusShortname = "portfolio-lrpi5ggzul"
     name = "Github"
     icon = "fab fa-github"
     weight = 1
-    url = "https://github.com/fibreactive/"
+    url = "https://github.com/0xdod/"
 [[params.social]]
     name = "Twitter"
     icon = "fab fa-twitter"
     weight = 3
-    url = "https://twitter.com/0x8fd/"
+    url = "https://twitter.com/0xdod/"
 [[params.social]]
     name = "LinkedIn"
     icon = "fab fa-linkedin"
