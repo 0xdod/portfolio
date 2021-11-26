@@ -4,16 +4,14 @@ date = 2020-12-25T20:38:40+01:00
 title = "Web scraping with go and go-colly"
 description = "Building a web scrapper in golang"
 slug = "web scraping with go" 
-tags = ["web scraping", "go", "gocolly"]
+tags = ["web scraping", "go", "colly"]
 categories = ["go", "golang"]
 externalLink = ""
 series = []
 featured_image ="/images/posts/golang.png"
 +++
 
-I have been flirting with go for a few weeks now and I built a simple forum-like website using [gin](https://github.com/gin-gonic/gin) which is a popular web framework for golang. After building the application, I was satisfied with how much I was able to learn about the language so I decided to do another little project with it. While I was browsing the web mindlessly(like most of us do), I stumbled upon a comment that talked about web scrapping in python then an idea popped in my mind, why not scrape the frontpage of a popular online forum then use the data to populate my own database. Now, scraping a website is not illegal, but it's good you should know what you can and cannot scrape from a website. Many websites have a **robots.txt** file which gives such information (checkout https://google.com/robots.txt). While there are tons of web scrapping tutorials on the web mostly in python, I felt there weren't enough of them in go so I decided to write one.  I did my research and found out an elegant golang framework for scraping websites called [colly](https://go-colly.org), and with this tool I was able to scrape the frontpage of a popular Nigerian forum called [Nairaland](https://nairaland.com/).
-
-The Go language has a ton of hype around it as it's relatively new, the syntax is relatively easy to pick up as compared to other statically typed languages, it is very fast and natively supports concurrency which makes it a language of choice for many in building cloud services and network applications. We can leverage this speed to scrape websites in a fast and easy way.
+In this post, I will show you how to use Go and [colly](https://go-colly.org) for web scraping by trying to scrape the frontpage of a popular Nigerian forum called [Nairaland](https://nairaland.com/).
 
 ##### Web Scraping
 [Web scraping](https://en.wikipedia.org/wiki/Web_scraping) is a form of data extraction that basically extracts data from websites. A web scraper is usually a bot that uses the HTTP protocol to access websites, extract HTML elements from them and use the data for various purposes.

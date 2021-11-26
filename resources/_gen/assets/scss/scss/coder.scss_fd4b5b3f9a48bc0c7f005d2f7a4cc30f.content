@@ -192,7 +192,7 @@ figure {
   width: 5rem;
   height: 5rem;
   display: inline-block;
-  box-shadow: 0 0 1rem var(--fg-color);
+  box-shadow: 0 0 3px var(--fg-color);
   background: var(--bg-color);
   transition: all .3s;
   font-size: 2.2rem;
