@@ -100,9 +100,9 @@ disqusShortname = "portfolio-lrpi5ggzul"
             url = "posts/"
 
             [[languages.en.menu.main]]
-            name = "Projects"
+            name = "Portfolio"
             weight = 3
-            url = "projects/"
+            url = "portfolio/"
 
             [[languages.en.menu.main]]
             name = "Contact me"
