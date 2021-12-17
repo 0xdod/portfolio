@@ -26,4 +26,4 @@ Here's a list of some projects I've been able to build while learning to code:
 Backend Developer Intern, HNG internship (October 2021 - October 2021):
 - Contributed to the backend API for [zurichat](//zuri.chat), working with Go and Mongodb
 - Collaborated with teammates to gather requirements and develop features with innovative solutions.
-- I was part of the finalists at the end of the internship duration.
+- I was part of the finalists at the end of the internship program.
